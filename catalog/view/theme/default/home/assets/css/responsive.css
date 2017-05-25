@@ -1,0 +1,155 @@
+/*************************************
+
+Template Name: APPS - Responsive APP Landing Page
+Author: perfect_coders
+Version: 1.0
+Design and Developed by: perfect_coders
+
+NOTE: This is responsive css of the template.
+
+****************************************/
+
+
+
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .welcome-text {
+  padding-top: 160px;
+}
+    .about-content {
+  padding: 110px 0;
+}
+    .choose-list-content {
+  padding:20px 0;
+}
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+     .custom-navbar ul li a {
+          padding: 30px 7px;
+    }
+    .welcome-text{
+        padding-top: 150px;
+        text-align: center;
+    }
+     .welcome-img {
+        padding-top: 70px;
+    }
+    .about-content{
+        padding: 0;
+        padding-bottom: 80px;
+    }
+    .about-img{
+
+    }
+    .single-feature{
+        margin-bottom: 30px;
+    }
+    .choose-list-content {
+        padding: 0;
+        padding-top: 80px;
+    }
+    .single-pricing {
+        margin-bottom: 30px;
+    }
+    .address {
+        margin-bottom: 30px;
+    }
+    
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+    .custom-navbar{
+        background: #333;
+        padding: 12px 0;
+    }
+    .custom-navbar .navbar-collapse {
+  box-shadow: 0 1px 0 rgba(51, 51, 51, 1.0) inset;
+}
+    .custom-navbar.menu-top-fixed{
+        background: #fff;
+    }
+    .custom-navbar.menu-top-fixed .navbar-collapse{
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 1.0) inset;
+    }
+    .custom-navbar ul li a{
+        padding: 15px;
+    }
+    .custom-navbar .navbar-toggle .icon-bar {
+        background: #fff none repeat scroll 0 0;
+    }
+    .custom-navbar.menu-top-fixed .navbar-toggle .icon-bar {
+        background: #333 none repeat scroll 0 0;
+    }
+    .custom-navbar .logo a{
+        padding: 0 15px;
+    }
+
+    .welcome-text{
+        padding-top: 130px;
+        text-align: center;
+    }
+    .welcome-text h1 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .welcome-btn {
+        margin-top: 35px;
+    }
+
+    .welcome-btn a {
+        margin-bottom: 25px;
+    }
+    .welcome-img {
+        padding-top: 60px;
+    }
+    .single-about {
+        margin-bottom: 30px;
+    }
+    .about-content{
+        padding: 0;
+        padding-bottom: 80px;
+    }
+    .about-img{
+
+    }
+    .choose-list-content {
+        padding: 0;
+        padding-top: 80px;
+    }
+    .choose-block-img{
+
+    }
+    .content-block-margin{
+        height: 0;
+    }
+
+    .single-feature {
+        margin-bottom: 30px;
+    }
+
+    .subscribe {
+        padding: 0;
+    }
+    .single-pricing {
+        margin-bottom: 30px;
+    }
+    .download a {
+        margin-bottom: 25px;
+    }
+    .address {
+        margin-bottom: 30px;
+    } 
+   
+}
+
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+    .welcome-text{
+        padding-top: 150px;
+    } 
+}

@@ -1,0 +1,27 @@
+/*@media (min-width: 1200px){
+	.container {
+	    width: 980px;
+	}
+}
+body{
+	background: url(body-bg.png) repeat-x #2c3133;
+}
+h1, .componentheading {
+    font-weight: 100;
+    font-size: 18px;
+    font-family: georgia,times,serif;
+    border-bottom: 1px solid #163b5f;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}*/
+.home-area {
+    height: 500px;
+}
+.custom-navbar ul li a {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 30px 10px;
+}
+.about-content {
+    padding-top: 0px;
+}

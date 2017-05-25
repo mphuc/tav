@@ -1,0 +1,15 @@
+HTTrack3.49-1+htsswf+htsjava launched on Fri, 19 May 2017 11:52:46 at http://programmerhasan.com/demos/apps/apps/index_video.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://programmerhasan.com/demos/apps/apps/index_video.html -O1 "C:\Users\TRUNGDOAN\Desktop\theme\tpcn" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:55:23	Error: 	"Not Found" (404) at link programmerhasan.com/demos/apps/apps/assets/images/raster.html (from programmerhasan.com/demos/apps/apps/assets/css/YTPlayer.css)
+11:55:23	Error: 	"Not Found" (404) at link programmerhasan.com/demos/apps/apps/assets/images/raster%402x.html (from programmerhasan.com/demos/apps/apps/assets/css/YTPlayer.css)
+11:55:23	Error: 	"Not Found" (404) at link programmerhasan.com/demos/apps/apps/assets/images/raster_dot.html (from programmerhasan.com/demos/apps/apps/assets/css/YTPlayer.css)
+11:55:23	Error: 	"Not Found" (404) at link programmerhasan.com/demos/apps/apps/assets/images/raster_dot%402x.html (from programmerhasan.com/demos/apps/apps/assets/css/YTPlayer.css)
+
+HTTrack Website Copier/3.49-1 mirror complete in 2 minutes 37 seconds : 62 links scanned, 57 files written (4382121 bytes overall) [4395630 bytes received at 27997 bytes/sec]
+(4 errors, 0 warnings, 0 messages)

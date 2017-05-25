@@ -1,0 +1,990 @@
+
+/*************************************
+
+Template Name: APPS - Responsive APP Landing Page
+Author: perfect_coders
+Version: 1.0
+Design and Developed by: perfect_coders
+
+NOTE: This is main stylesheet of the template.
+
+****************************************/
+
+
+/*================================================
+            Table of contents  
+==================================================
+ 
+00. BASE CSS
+01. PRELOADER
+02. SECTION TITLE AND SECTION PADDING
+03. HEADER AREA
+04. HOME AREA
+05. ABOUT AREA
+06. FEATURE AREA
+07. CHOOSE AREA
+08. SCREENSHOOT AREA
+09. TESTIMONIAL AREA
+10. VIDEO AREA
+11. PRICING AREA
+12. DOWNLOAD AREA
+13. FAQ AREA
+14. SUBCRIBE AREA
+15. CONTACT AREA
+16. FOOTER AREA
+
+====================================================
+            End table content 
+===================================================*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 00. BASE CSS
+* ----------------------------------------------------------------------------------------
+*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+/*
+html, body{
+    height: 100%;
+}
+*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    color: #222;
+}
+p{
+    color: #666;
+    letter-spacing: 0.5px;
+}
+.spacer-50{
+    height: 50px;
+}
+.spacer-100{
+    height: 100px;
+}
+.spacer-30{
+    height: 30px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 01. PRELOADER
+* ----------------------------------------------------------------------------------------
+*/
+.preloader {
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color:#fff;
+    z-index:9999999;
+}
+.preloader .spinner {
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  margin: 100px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02. SECTION TITLE AND PADDING
+* ----------------------------------------------------------------------------------------
+*/
+.section-padding {
+    padding: 100px 0;
+}
+.section-title{
+    margin-bottom: 65px;
+}
+.section-title h2{
+   text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.section-title p{
+    font-family: 'Satisfy', cursive;
+    font-size: 22px;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03. HEADER AREA
+* ----------------------------------------------------------------------------------------
+*/
+.custom-navbar .logo a{
+   max-width: 160px;
+   
+}
+
+.custom-navbar ul li a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 30px 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.custom-navbar ul li a:hover{
+    background: transparent;
+}
+.custom-navbar ul li a:focus, .custom-navbar.menu-top-fixed ul li a:hover {
+    background: none;
+}
+.custom-navbar {
+    background-color: transparent;
+    border: 0 none;
+    transition: all 0.4s ease-in-out;
+}
+.custom-navbar.menu-top-fixed .logo a h1{
+    color: #333;
+    border: 3px solid #333;
+}
+.custom-navbar.menu-top-fixed {
+background:#fff;
+width: 100%;
+ margin-top:0px;
+    border-bottom: 1px solid #ddd;
+}
+.custom-navbar.menu-top-fixed ul li a {
+    color: #666;
+}
+.custom-navbar.menu-top-fixed ul li.active a {
+    color: #222;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04. HOME AREA
+* ----------------------------------------------------------------------------------------
+*/
+.home-area {
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+}
+.home-area:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: -1;
+}
+
+.welcome-text{
+   text-align: left;
+    padding-top: 210px;
+}
+
+.welcome-img img {
+    width: 500px;
+}
+.welcome-img {
+    padding-top: 100px;
+}
+
+.welcome-text h1 {
+    font-size: 45px;
+     color: #fff;
+    font-weight: 400;
+    line-height: 55px;
+}
+.welcome-text p{
+    color: #fff;
+}
+.welcome-btn {
+    margin-top: 45px;
+}
+.welcome-btn a {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  margin-right: 23px;
+  padding: 14px 26px 15px 73px;
+  text-decoration: none;
+    transition: 0.4s;
+    position: relative;
+}
+.welcome-btn a i.fa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    left: 25px;
+    top: 15px;
+}
+.welcome-btn a span{
+    font-size: 16px;
+    display: block;
+    line-height: 22px;
+    font-weight: 500;
+}
+.welcome-btn a span.text-large{
+    display: block;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 700;
+}
+.welcome-btn a:hover{
+    background: #fff;
+    color: #0299f1;
+}
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05.ABOUT AREA
+* ----------------------------------------------------------------------------------------
+*/
+.about-content{
+    padding: 150px 20px 150px 0;
+}
+.about-content h3 {
+  font-size: 34px;
+  margin-bottom: 22px;
+  text-transform: capitalize;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.about-content p {
+  font-size: 14px;
+  margin-bottom: 15px;
+    line-height: 28px;
+}
+ul.social-icon{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 23px;
+}
+ul.social-icon li{
+    display: inline-block
+}
+ul.social-icon li a{
+    display: block;
+    margin-right: 22px;
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    transition: .3s;
+}
+ul.social-icon li a:hover{
+    color: #0299f1;
+}
+ 
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06.FEATURE AREA
+* ----------------------------------------------------------------------------------------
+*/
+.feature-area {
+    background: #f7f7f7 none repeat scroll 0 0;
+}
+.col-md-4.no-padding {
+    padding: 0;
+}
+.single-feature {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 30px;
+}
+.single-feature:hover{
+box-shadow:0px 10px 25px rgba(0,0,0,0.1);
+position:relative;
+z-index:100;
+transform: translate(0, -5px);
+}
+.single-feature:hover{
+    box-shadow:0px -10px 25px rgba(0,0,0,0.1);
+position:relative;
+z-index:100;
+transform: translate(0px, 5px);
+}
+.single-feature:hover i.fa{
+    color: #0299f1;
+}
+
+.feature-icon.pull-left {
+    
+}
+.single-feature-content {
+    padding-left: 10px;
+}
+.feature-icon{
+    width: 60px;
+    height: auto;
+}
+.feature-icon i.fa {
+  font-size: 45px;
+    transition: 0.4s;
+}
+.single-feature-content h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.single-feature-content.media-body p {
+    
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 7. CHOOSE AREA
+* ----------------------------------------------------------------------------------------
+*/
+.choose-content-block{
+    
+}
+.choose-list-content{
+    padding: 30px 0 30px 40px;
+}
+.choose-list-content h3 {
+    text-transform: uppercase;
+    font-size: 34px;
+    color: #222;
+    font-weight: 500;
+    margin-bottom: 22px;
+    
+}
+.choose-list-content h3 span{
+    font-weight: 700;
+}
+.choose-list {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.choose-list li {
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-weight: 600;
+    position: relative;
+    padding-left: 30px;
+}
+.choose-list li{
+    
+}
+.choose-list li:before {
+    color: #0299f1;
+    content: "\f046";
+    font-family: fontawesome;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.download-btn {
+  background: #0299f1 none repeat scroll 0 0;
+  color: #fff;
+  padding: 14px 26px;
+  margin-top: 22px;
+  display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.download-btn:hover{
+    opacity: .9;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.SCREENSHOOT AREA
+* ----------------------------------------------------------------------------------------
+*/
+.screenshots-area{
+    background: #f7f7f7;
+}
+.app-screenshot{
+   
+}
+.owl-dots {
+  margin-top: 35px;
+  text-align: center;
+}
+.owl-dots div {
+  background: #333 none repeat scroll 0 0;
+  display: inline-block;
+  height: 5px;
+  margin-left: 5px;
+  width: 15px;
+}
+.owl-dots div.active{
+    background: #0299f1;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09.TESTIMONIAL AREA
+* ----------------------------------------------------------------------------------------
+*/
+.testimonial-area{
+   
+}
+.single-testimonial {
+    margin-bottom: 30px;
+}
+.testimonial-content{
+    background: #f4f5f6 none repeat scroll 0 0;
+     position: relative;
+    padding: 15px;
+}
+.testimonial-content:before {
+  border-color: #f4f5f6 transparent transparent;
+  border-style: solid;
+  border-width: 20px 20px 0 0;
+  bottom: -20px;
+  content: "";
+  height: 0;
+  left: 40px;
+  position: absolute;
+  width: 0;
+}
+.testimonials-avtar {
+   display: table-cell;
+    vertical-align: middle;
+    width: 70px;
+}
+.t-name{
+    padding: 13px 0;
+}
+.testimonials-avtar img {
+    border-radius: 50%;
+    width: 100%;
+}
+.testimonials-name{
+    margin-top: 30px;
+}
+.testimonials-name h4 {
+  font-size: 15px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.testimonials-comment {
+    font-size: 14px;
+    padding-left: 25px;
+    display: table-cell;
+}
+
+.t-author {
+    padding-left: 85px;
+}
+.testimonial-area .owl-dots {
+  margin-top: 35px;
+  text-align: center;
+}
+.testimonial-area .owl-dots div {
+  background: #333 none repeat scroll 0 0;
+  display: inline-block;
+  height: 5px;
+  margin-left: 5px;
+  width: 15px;
+}
+.testimonial-area .owl-dots div.active{
+    background: #fff;
+}
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 10.VIDEO AREA
+* ----------------------------------------------------------------------------------------
+*/
+.video-area.section-padding{
+   padding: 180px 0;
+}
+.video-area {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.video-area::before {
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.video-container a {
+  background: transparent none repeat scroll 0 0;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 40px;
+  height: 75px;
+  line-height: 76px;
+  margin-bottom: 0;
+  text-align: center;
+  transition: all 0.4s ease-in-out 0s;
+  width: 160px;
+}
+.video-container a:hover{
+    border: 2px solid #0299f1;
+    color: #0299f1;
+}
+.video-container h2 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 40px;
+  margin: 25px 0;
+  text-transform: uppercase;
+}
+.video-container p {
+  color: #fff;
+}
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 11.PRICING AREA
+* ----------------------------------------------------------------------------------------
+*/
+.pricing-area{
+    
+}
+.single-pricing {
+    border-radius: 5px;
+    padding: 20px 0 25px;
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    background: #fff;
+}
+.single-pricing.active{
+    background: #0299f1;
+    color: #fff;
+    box-shadow: 0 16px 25px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.single-pricing.active h4, .single-pricing.active h1, .single-pricing.active h1 small{
+    color: #fff;
+}
+
+.single-pricing {
+    color: #666;
+}
+.single-pricing h4 {
+    color: #0299f1;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.single-pricing h1, .single-pricing h1 small {
+    color: #0299f1;
+}
+
+.block-caption {
+    font-size: 30px;
+    font-weight: 700;
+}
+.single-pricing ul {
+    list-style: outside none none;
+    margin: 0 0 20px;
+    padding: 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.single-pricing ul li {
+    
+    padding: 10px 0;
+}
+.single-pricing a.btn-pricing-bg {
+    border: 2px solid #0299f1;
+    color: #0299f1;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.single-pricing a.btn-pricing-bg:hover{
+    background: #0299f1;
+    color: #fff;
+    border: 2px solid #0299f1;
+}
+.single-pricing.active a.btn-pricing-bg{
+    background: #fff;
+    color: #0299f1;
+}
+.single-pricing.active a.btn-pricing-bg:hover{
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 12. DOWNOAD AREA
+* ----------------------------------------------------------------------------------------
+*/
+.download-area {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center center;
+}
+.download-area:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+}
+.download h2 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    
+}
+.download p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #fff;
+}
+.download-area-btn{
+    margin-top: 60px;
+}
+.download-area-btn a {
+  background: #fff;
+    text-transform: capitalize;
+  color: #666;
+  padding: 16px 34px;
+  font-size: 28px;
+  font-weight: 600;
+  margin-right: 36px;
+  border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+}
+.download-area-btn a:hover{
+    color: #fff;
+    background: #0299f1;
+}
+.download-area-btn a i.fa{
+    padding-right: 20px;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 13. FAQ AREA
+* ----------------------------------------------------------------------------------------
+*/
+.panel-group .panel {
+        border-radius: 0;
+        box-shadow: none;
+        border-color: #ddd;
+    }
+
+.panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: #222;
+    background-color: #f4f5f6;
+    border-color: #ddd;
+}
+
+.panel-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.panel-title > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+.more-less {
+    float: right;
+    color: #212121;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #ddd;
+    background: #f7f7f7;
+}
+.faq-area .panel{
+    margin-bottom: 20px;
+}
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 14. SUBCRIBE AREA
+* ----------------------------------------------------------------------------------------
+*/
+.subscribe-area {
+    background: #f7f7f7;
+}
+.subscribe-icon {
+    margin-top: 20px;
+    text-align: center;
+}
+.subscribe-form h3 {
+  letter-spacing: 2px;
+    margin-bottom: 32px;
+  text-transform: uppercase;
+}
+.subscribe-icon a {
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 18px;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 7px;
+  width: 45px;
+    color: #fff;
+}
+.subscribe-icon a:hover{
+    opacity: 0.9;
+}
+.subscribe-icon a.facebook{background: #3b5998;}
+.subscribe-icon a.twitter{background: #1a90d9;}
+.subscribe-icon a.google{background: #ff5252;}
+.subscribe-icon a.linkdin{background: #0077b5;}
+.subscribe-icon a.youtube{background: #d32322 ;}
+/*========================
+     subscribe Form
+==========================*/
+.subscribe{
+    position: relative;
+    margin: 15px auto 0;
+    padding: 0 100px;
+}
+.form-group.subscribe-area{
+    margin-bottom: 0px;
+}
+
+.subform .form-control{
+    background: transparent;
+    width: 100%;
+    color: #666;
+    display: inline-block;
+    line-height: 18px;
+    font-size: 14px;
+    height: 40px;
+    box-shadow: none;
+    border: 0px solid;
+    border-bottom: 2px solid #666;
+    border-radius: 0px;
+    padding-left: 12px;
+    text-align: center;
+}
+.subform .form-control:focus{
+    border: 0px solid;
+    border-bottom: 2px solid #333;
+    box-shadow: none;
+}
+.submit-bt{
+    color: #fff;
+    font-size: 12px;
+    padding: 16px 34px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 22px auto 0;
+    background: #0299f1;
+    border: 0px solid;
+    font-weight: 600;
+    border-radius: 0px;
+    font-size: 12px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+.submit-bt:active, 
+.submit-bt:focus, 
+.submit-bt:hover {
+    outline: none;
+    box-shadow: none;
+}
+.submit-bt:hover, .btn-primary:hover{
+      background: #3498dc;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+   
+}
+.subform label {
+  bottom: -20px;
+  color: #fff;
+  display: block;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px 5px #000;
+  width: 100%;
+    font-weight: 400;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 15. CONTACT AREA
+* ----------------------------------------------------------------------------------------
+*/
+.contact-area{
+    
+}
+.contact .form-control {
+  border-radius: 0px;
+}
+.btn-contact-bg {
+    border-radius: 0;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 15px 26px;
+    text-transform: uppercase;
+}
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    transition: all 0.4s ease-in-out;
+    background: #0299f1;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.single-address {
+    margin-bottom: 23px;
+}
+.single-address i.fa {
+  color: #0299f1;
+  float: left;
+  font-size: 22px;
+  height: 60px;
+  line-height: 30px;
+  margin-right: 20px;
+  width: 30px;
+}
+
+.single-address h4 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 16. FOOTER AREA
+* ----------------------------------------------------------------------------------------
+*/
+.footer-area {
+    background: #333 none repeat scroll 0 0;
+    padding: 18px 0;
+}
+.footer-text p {
+    color: #fff;
+    margin: 0;
+}
+
+
+
