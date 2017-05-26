@@ -125,6 +125,9 @@ class ModelAccountCustomer extends Model {
 	}
 
 	public function saveTranstionHistory($customer_id, $wallet, $text_amount, $system_decsription,$type,$balance, $url = ''){
+
+		$date_added= date('Y-m-d H:i:s') ;
+
 		$query = $this -> db -> query("
 			INSERT INTO ".DB_PREFIX."customer_transaction_history SET
 			customer_id = '".$customer_id."',
@@ -134,7 +137,7 @@ class ModelAccountCustomer extends Model {
 			type = '".$type."',
 			balance = '".$balance."',
 			url = '".$url."',
-			date_added = NOW()
+			date_added = '".$date_added."'
 		");
 		$id = $this -> db -> getLastId();
 		

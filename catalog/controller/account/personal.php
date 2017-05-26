@@ -864,7 +864,7 @@ public function checkBinary($p_binary){
 	public function total_pd($customer_id){
 		$this -> load -> model('account/customer');
 		$count = $this -> model_account_customer ->  getTotalPD($customer_id);
-		$count = number_format($count['number'] / 10000);
+		$count = number_format($count['number']);
 
 		return $count;
 	}
