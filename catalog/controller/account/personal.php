@@ -372,7 +372,7 @@ public function checkBinary($p_binary){
 
 				$transaction_password = $this->request->post['transaction_password'] = rand(100000,999999);
 
-		//$tmp = $this -> model_customize_register -> addCustomer_custom($this->request->post);
+				$tmp = $this -> model_customize_register -> addCustomer_custom($this->request->post);
 
 				$cus_id= $tmp;
 
