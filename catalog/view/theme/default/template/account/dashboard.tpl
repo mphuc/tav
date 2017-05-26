@@ -72,7 +72,7 @@
                                              
                                             <tr>
                                                 <td><?php echo $value['browser'] ?></td>
-                                                <td><?php echo date('d-F-Y H:i:s', strtotime($value['date_added'])) ?> </td>
+                                                <td><?php echo date('d/m/Y H:i:s', strtotime($value['date_added'])) ?> </td>
                                                 <td><?php echo $value['ip'] ?> </td>
                                             </tr>
                                             <?php } ?>

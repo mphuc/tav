@@ -10,41 +10,41 @@
 <meta name="author" content="Mackayshieldslife">
 
 
-<title>Mackayshieldslife.Com</title>
+<title>Tân An Việt</title>
 
-<link rel="shortcut icon" href="catalog/view/theme/default/assets/images/favicon.png">
+<link rel="shortcut icon" href="catalog/view/theme/default/images/logo.png">
 
 
-<link rel="stylesheet" href="catalog/view/theme/default/assets/plugins/morris/morris.css">
-<link rel="stylesheet" href="catalog/view/theme/default/assets/css/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="catalog/view/theme/default/assets/css/core.css" type="text/css" />
-<link rel="stylesheet" href="catalog/view/theme/default/assets/css/components.css" type="text/css" />
-<link rel="stylesheet" href="catalog/view/theme/default/assets/css/icons.css" type="text/css" />
-<link rel="stylesheet" href="catalog/view/theme/default/assets/css/pages.css" type="text/css" />
-<link rel="stylesheet" href="catalog/view/theme/default/assets/css/responsive.css" type="text/css" />
+<link href="catalog/view/theme/default/assets/bower_components/select2/dist/css/select2.min.css" rel="stylesheet">
+      
+      <link href="catalog/view/theme/default/assets/bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+      <link href="catalog/view/theme/default/assets/bower_components/dropzone/dist/dropzone.css" rel="stylesheet">
+      <link href="catalog/view/theme/default/assets/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet">
+      <link href="catalog/view/theme/default/assets/bower_components/datatables/media/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+      <link href="catalog/view/theme/default/assets/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+      <link href="catalog/view/theme/default/assets/css/main.css" rel="stylesheet">
+      <link href="catalog/view/theme/default/assets/css/bootstrap.min.css" rel="stylesheet">
 
-<script src="catalog/view/theme/default/assets/js/modernizr.min.js"></script>
+      <!---  -->  
+      
+      
+      <link href="catalog/view/theme/default/css/customer.css" rel="stylesheet">
 
 </head>
 
-<body class="error-page close-it">
+<body class=" close-it">
 
 
-<div id="error-wrapper" class="text-center"> 
-	<div class="container">
+<div style="width: 100%" class="text-center"> 
+	<div class="col-md-4 col-md-push-4">
 		<a href="#"><img src="catalog/view/theme/default/images/logo.png"  style="width: 300px" class="img-responsive center-block" alt=""/></a>
-		<p class="lead">The page you are looking for<br>could not be found</p>
-		<h2>404</h2>
-		<p>Please go to our <a href="home.html">homepage</a> or go back to <a href="#">previous page</a></p>
-		<p class="copy">&copy; 2017. Mackayshieldslife<span>Com</span></p>
+		<p class="lead">Trang bạn đang tìm kiếm <br>Không thể tìm thấy</p>
+		<h1 style="font-size: 70px; font-weight: bold;">404</h1>
+		<p>
+Vui lòng truy cập trang chủ của chúng tôi  <a href="home.html">trang chủ</a> hoặc quay lại  <a href="#">trang trước</a></p>
+		<p class="copy">&copy; 2017. Tân An Việt<span></span></p>
 	</div>
 </div>
-
-<div class="page-loader">
-	<a href="#"><img src="catalog/view/theme/default/images/logo.png" style="width: 300px" class="img-responsive center-block" alt=""/></a>
-	<span class="text-uppercase">Loading...</span>
-</div>
-
 
 <script>
        var resizefunc = [];

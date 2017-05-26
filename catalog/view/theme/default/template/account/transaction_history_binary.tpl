@@ -51,7 +51,7 @@
                                           <?php echo $value['code'] ?>
                                        </td>
                                        <td data-title="Thời gian" align="center">
-                                          <?php echo date('d-F-Y H:i A',strtotime($value['date_added'])) ?>
+                                          <?php echo date('d/m/Y H:i:s',strtotime($value['date_added'])) ?>
                                        </td>
                                        <td data-title="Số tiền" align="center">
                                           <?php echo $text_amount[1] ?> VNĐ
