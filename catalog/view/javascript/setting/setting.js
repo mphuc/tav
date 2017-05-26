@@ -945,7 +945,7 @@ $( document ).ready(function() {
                 if (result.complete == 1){
                     alertify.set('notifier','delay', 3000);
                     alertify.set('notifier','position', 'top-right');
-                    alertify.success('Update image profile successfull !!!');
+                    alertify.success('Cập nhập ảnh thành công');
                     
                 }
             }
