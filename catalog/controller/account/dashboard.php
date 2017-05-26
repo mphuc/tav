@@ -87,15 +87,86 @@ class ControllerAccountDashboard extends Controller {
 	{
 		$this -> load -> model('account/customer');
 		$customer = $this -> model_account_customer-> getCustomer($this -> session -> data['customer_id']);
-		if ($customer['total_pd_left'] > $customer['total_pd_right'])
-		{
-			return $customer['total_pd_right'];
-		}
-		else
-		{
-			return $customer['total_pd_left'];
-		}
+		$check_f1_left = $this -> binary_left($customer_id);
+		$check_f1_right  = $this -> binary_right($customer_id);
+
+		$getgoidautu =$this -> model_account_customer ->getTotalPD($customer_id);
+		
+		if (doubleval($getgoidautu['number']) > 0 && intval($check_f1_left) === 1 && intval($check_f1_right) === 1 )
+        {  
+        	if ($customer['total_pd_left'] > $customer['total_pd_right'])
+			{
+				return $customer['total_pd_right'];
+			}
+			else
+			{
+				return $customer['total_pd_left'];
+			}
+        }
+        else
+        {
+        	return 0;
+        }
+		
 	}
+
+	public function binary_right($customer_id){
+		$this -> load -> model('account/customer');
+		$check_f1 = $this -> model_account_customer -> check_p_node_binary_($customer_id);
+		$listId= '';
+		foreach ($check_f1 as $item) {
+			$listId .= ',' . $item['customer_id'];
+		}
+		$arrId = substr($listId, 1);
+		// $arrId = explode(',', $arrId);
+		$count = $this -> model_account_customer ->  getCustomer_ML($customer_id);
+		if(intval($count['right']) === 0){
+			$customer_binary = ',0';
+		}else{
+			$id = $count['right'];
+			$count = $this -> model_account_customer -> getCount_ID_BinaryTreeCustom($count['right']);
+			$customer_binary = $count.','.$id;
+		}
+		$customer_binary = substr($customer_binary, 1);
+		// $customer_binary = explode(',', $customer_binary);
+		$array = $arrId.','.$customer_binary;
+		$array = explode(',', $array);
+		
+		$array = array_count_values($array);
+		
+		$array = in_array(2, $array) ? 1 : 0;
+		return $array;
+	}
+	public function binary_left($customer_id){
+
+		$this -> load -> model('account/customer');
+		
+		$check_f1 = $this -> model_account_customer -> check_p_node_binary_($customer_id);
+		
+		$listId= '';
+		foreach ($check_f1 as $item) {
+			$listId .= ',' . $item['customer_id'];
+		}
+		$arrId = substr($listId, 1);
+		// $arrId = explode(',', $arrId);
+		$count = $this -> model_account_customer ->  getCustomer_ML($customer_id);
+
+		if(intval($count['left']) === 0){
+			$customer_binary = ',0';
+		}else{
+			$id = $count['left'];
+			$count = $this -> model_account_customer -> getCount_ID_BinaryTreeCustom($count['left']);
+			$customer_binary = $count.','.$id;
+		}
+		$customer_binary = substr($customer_binary, 1);
+		// $customer_binary = explode(',', $customer_binary);
+		$array = $arrId.','.$customer_binary;
+		$array = explode(',', $array);
+		$array = array_count_values($array);
+		$array = in_array(2, $array) ? 1 : 0;
+		return $array;
+	}
+
 
 	public function randprofit($customer_id){
 		$this->load->model('account/customer');

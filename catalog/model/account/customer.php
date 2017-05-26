@@ -3041,4 +3041,12 @@ class ModelAccountCustomer extends Model {
 			status = 1 WHERE code = '" . $code . "' AND package = '".$package."'");
 		return $query;
 	}
+
+	public function check_p_node_binary_($customer_id){
+		$query = $this -> db -> query("
+			SELECT customer_id FROM sm_customer_ml where  p_node = ".$customer_id." and level >= 2 ");
+		return $query -> rows;
+	}
+	
+	
 }
