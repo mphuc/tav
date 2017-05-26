@@ -19,7 +19,7 @@
       <link href="catalog/view/theme/default/assets/bower_components/datatables/media/css/dataTables.bootstrap4.min.css" rel="stylesheet">
       <link href="catalog/view/theme/default/assets/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
       <link href="catalog/view/theme/default/assets/css/main.css" rel="stylesheet">
-      <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+      <script src="https://www.google.com/recaptcha/api.js?hl=vn"></script>
    </head>
    <body class="auth-wrapper">
       <div class="all-wrapper with-pattern">
