@@ -945,6 +945,9 @@ span.btn.btn-default.btn-tree {
     .card-box-head {
         padding: 20px 5px;
     }
+    .personal_contain .formsearch{
+        margin-left: 0px !important;
+    }
 
 }
 .bg-blue{
