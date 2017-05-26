@@ -89,7 +89,11 @@
 <script type="text/javascript" src="catalog/view/javascript/tooltipster.bundle.min.js"></script>
 <script type="text/javascript">
      $(document).ready(function(){
-   
+        
+        $('.mobile-menu-trigger').on('click',function(){
+          $('.menu-activated-on-click').toggleClass('mobile-active');
+        });
+
     $('#frmAccount').on('submit', function(envt) {        
           $(this).ajaxSubmit({
               type : 'GET',
