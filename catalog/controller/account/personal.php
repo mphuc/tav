@@ -346,6 +346,8 @@ public function checkBinary($p_binary){
 		$data['footer'] = $this -> load -> controller('common/footer');
 		$data['header'] = $this -> load -> controller('common/header');
 
+		$data['token_crt'] = $this -> session -> data['token_crt'] = hexdec( crc32(rand()) );
+
 		if (file_exists(DIR_TEMPLATE . $this -> config -> get('config_template') . '/template/account/registers.tpl')) {
 			$this -> response -> setOutput($this -> load -> view($this -> config -> get('config_template') . '/template/account/registers.tpl', $data));
 		} else {
@@ -361,6 +363,12 @@ public function checkBinary($p_binary){
 			$this -> load -> model('customize/register');
 			$this -> load -> model('account/auto');
 			$this -> load -> model('account/customer');
+
+			if ($this->request->post['token_crt'] != $this -> session -> data['token_crt'])
+			{
+				$this -> response -> redirect(HTTPS_SERVER . 'login.html');
+			}
+			$this -> session -> data['token_crt'] = hexdec( crc32(rand()) );
 
 			$check_p_binary = $this -> model_account_customer -> check_p_binary($this->request->post['p_binary']);
 			
