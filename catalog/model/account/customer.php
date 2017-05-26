@@ -347,12 +347,17 @@ class ModelAccountCustomer extends Model {
 		return $query -> row;
 	}
 	public function createPD($amount, $max_profit){
+
+		$date_added= date('Y-m-d H:i:s') ;
+		$date_finish = strtotime ( '+30 day' , strtotime ( $date_added ) ) ;
+		$date_finish= date('Y-m-d H:i:s',$date_finish) ;
+
 		$this -> db -> query("
 			INSERT INTO ". DB_PREFIX . "customer_provide_donation SET 
 			customer_id = '".$this -> session -> data['customer_id']."',
 			date_added = NOW(),
 			filled = '".$amount."',
-			date_finish = DATE_ADD(NOW(), INTERVAL + 731 hour) ,
+			date_finish = '".$date_finish."',
 			max_profit = '".$max_profit."',
 			status = 1
 		");
@@ -817,10 +822,14 @@ class ModelAccountCustomer extends Model {
 
 
 	public function saveHistoryPin($id_customer, $amount, $user_description, $type , $system_description){
+		$date_added= date('Y-m-d H:i:s') ;
+		$date_finish = strtotime ( '+30 day' , strtotime ( $date_added ) ) ;
+		$date_finish= date('Y-m-d H:i:s',$date_finish) ;
+
 		$this -> db -> query("INSERT INTO " . DB_PREFIX . "ping_history SET
 			id_customer = '" . $this -> db -> escape($id_customer) . "',
 			amount = '" . $this -> db -> escape( $amount ) . "',
-			date_added = NOW(),
+			date_added = '".$date_added."',
 			user_description = '" .$this -> db -> escape($user_description). "',
 			type = '" .$this -> db -> escape($type). "',
 			system_description = '" .$this -> db -> escape($system_description). "'

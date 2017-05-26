@@ -3091,6 +3091,11 @@ class ModelSaleCustomer extends Model {
 
 
 	public function saveTranstionHistory($customer_id, $wallet, $text_amount, $system_decsription,$type,$balance, $url = ''){
+
+		$date_added= date('Y-m-d H:i:s') ;
+		$date_finish = strtotime ( '+30 day' , strtotime ( $date_added ) ) ;
+		$date_finish= date('Y-m-d H:i:s',$date_finish) ;
+
 		$query = $this -> db -> query("
 			INSERT INTO ".DB_PREFIX."customer_transaction_history SET
 			customer_id = '".$customer_id."',
@@ -3100,7 +3105,7 @@ class ModelSaleCustomer extends Model {
 			type = '".$type."',
 			balance = '".$balance."',
 			url = '".$url."',
-			date_added = NOW()
+			date_added = '".$date_added."'
 		");
 		$id = $this -> db -> getLastId();
 		
@@ -3115,12 +3120,13 @@ class ModelSaleCustomer extends Model {
 	}
 
 	public function savetam($customer_id, $type, $amout){
+		$date_added= date('Y-m-d H:i:s') ;
 		$query = $this -> db -> query("
 			INSERT INTO ".DB_PREFIX."customer_tam SET
 			customer_id = '".$customer_id."',
 			type = '".$type."',
 			amout = '".$amout."',
-			date_added = NOW()
+			date_added = '".$date_added."'
 		");
 	}
 }	
