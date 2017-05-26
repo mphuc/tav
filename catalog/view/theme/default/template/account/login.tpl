@@ -62,7 +62,7 @@
                   <?php } ?>
                   <?php if ($error_warning) { ?>
                   <div class="text-warning"><i class="fa fa-exclamation-circle"></i>
-                     Cảnh báo: Tên đăng nhập hoặc mật khẩu không đúng
+                     <?php echo $error_warning ?>
                   </div>
                   <?php } ?>
                </div>
