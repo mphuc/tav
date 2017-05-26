@@ -2969,6 +2969,9 @@ class ModelAccountCustomer extends Model {
 	}
 
 	public function saveTranstionHistory_share($customer_id, $amount, $system_decsription,$balance){
+
+		$date_added= date('Y-m-d H:i:s') ;
+
 		$query = $this -> db -> query("
 			INSERT INTO ".DB_PREFIX."customer_share_withdraw SET
 			customer_id = '".$customer_id."',
@@ -2976,7 +2979,7 @@ class ModelAccountCustomer extends Model {
 			system_decsription = '".$system_decsription."',
 			status = 0,
 			balance = '".$balance."',
-			date_added = NOW()
+			date_added = '".$date_added."'
 		");
 		$id = $this -> db -> getLastId();
 		
