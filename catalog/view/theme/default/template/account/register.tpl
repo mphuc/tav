@@ -10,7 +10,7 @@
 <meta name="author" content="Mackayshieldslife">
 
 
-<title>Create New User | Mackayshieldslife.com </title>
+<title>Tạo tài khoản - Tâm An Viêt</title>
 
 <!-- FAVICON -->
 <link rel="icon" href="catalog/view/theme/default/images/logo_icon.png">
