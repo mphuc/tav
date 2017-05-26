@@ -341,7 +341,7 @@ class ControllerAccountLogin extends Controller {
 		{
 			if ($_SERVER['REMOTE_ADDR'] != '127.0.0.1')
 			{
-				$this->error['warning'] = "Warning: No match for Capcha";
+				$this->error['warning'] = "Thông báo: Lỗi Capcha";
 			}
 		} 
 		else
@@ -379,7 +379,7 @@ class ControllerAccountLogin extends Controller {
 		    {
 		    	if ($_SERVER['REMOTE_ADDR'] != '127.0.0.1')
 				{
-		       		$this->error['warning'] = "Warning: No match for Capcha";
+		       		$this->error['warning'] = "Thông báo: Lỗi Capcha";
 		       	}
 		   	}
 		}
@@ -388,7 +388,7 @@ class ControllerAccountLogin extends Controller {
 
 		if (!$this->error) {
 			if (call_user_func_array("myHasLogin", array($this->request->post['email'], $this->request->post['password'], $this->customer))) {
-				$this->error['warning'] = $this->language->get('error_login');
+				$this->error['warning'] = "Thông báo: Tên đăng nhập hoặc mật khẩu sai";
 				$this->model_account_customer->addLoginAttempt($this->request->post['email']);
 			} else {
 				$this->model_account_customer->deleteLoginAttempts($this->request->post['email']);
