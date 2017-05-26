@@ -335,8 +335,8 @@ class ControllerAccountLogin extends Controller {
 		/*cap cha google*/
 
 		$api_url     = 'https://www.google.com/recaptcha/api/siteverify';
-		$site_key    = '6LenBR4UAAAAAJ2wx-9dJti6frzpJjKN3TLOcHzI';
-		$secret_key  = '6LenBR4UAAAAAIL-iOn8myAjqUc71TsuFGdZboEF';
+		$site_key    = '6Lcm_iIUAAAAAJGRhY09TEmAX01wTF3_8mkZRJQF';
+		$secret_key  = '6Lcm_iIUAAAAAP_ps2_yc1d8gxJYx2yUVvDv7K6b';
 		if (!$_POST['g-recaptcha-response']) 
 		{
 			if ($_SERVER['REMOTE_ADDR'] != '127.0.0.1')

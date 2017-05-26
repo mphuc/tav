@@ -921,8 +921,8 @@ class ModelPdRegistercustom extends Model {
 	public function get_all_code($limit, $offset){
 
 		$query = $this -> db -> query("
-			SELECT A.*, B.username, B.firstname
-			FROM  ".DB_PREFIX."customer_code A LEFT JOIN ".DB_PREFIX."customer B ON B.code_active = A.code
+			SELECT A.*
+			FROM  ".DB_PREFIX."customer_code A
 			ORDER BY A.date_added DESC
 			LIMIT ".$limit."
 			OFFSET ".$offset."

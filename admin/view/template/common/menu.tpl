@@ -20,6 +20,7 @@
 <?php } ?>
 
     <li id="" ><a href="<?php echo $create_code; ?>"><i class="fa fa-user fa-fw"></i> <span> Tạo Mã </span></a></li>
+    <li id="news" ><a href="index.php?route=pd/code&token=<?php echo $_GET['token'];?>"><i class="fa fa-dashboard fa-fw"></i> <span>Code đã tạo</span></a></li>
 <?php if ($_SESSION['user_id'] == 1) {?>
 
   <?php /* ?>

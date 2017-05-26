@@ -3,7 +3,7 @@
         <div class="container">
             <div class="col-md-12">
                 <div class="footer-text text-center wow zoomIn" data-wow-delay="0.4s">
-                    <p>&copy;2017 <strong>APPS</strong>. All right reserved. </p>
+                    <p>&copy;2017 <strong>Tân An Việt</strong>. </p>
                 </div>
             </div> <!--/.row -->
         </div> <!--/.container -->

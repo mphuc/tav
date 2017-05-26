@@ -24,12 +24,10 @@
      				<th>Họ tên</th>
      				<th>Gói</th>
             <th>Code</th>
-            <th>Số điện thoại</th>
-            <th>Địa chỉ</th>
+            
      				<th>Trạng thái </th>
             <th>Ngày tạo</th>
-     				<th>Ngày sử dụng </th>
-            <th>Username đăng ký</th>
+     			
      			</tr>
      		</thead>
      		<tbody>
@@ -48,14 +46,11 @@
             <?php } else { ?>
             <td><?php echo "....".substr($value['code'],-7); ?></td>
             <?php } ?>
-            <td><?php echo $value['telephone']; ?></td>
-            <td><?php echo $value['address']; ?></td>
             
             <td class="text-center"><i class="fa fa-circle <?php echo ($value['status']==0) ? "red" : "blue"; ?>" aria-hidden="true"></i></td>
            
             <td><?php echo date('d/m/Y H:i',strtotime($value['date_added'])); ?></td>
-            <td><?php echo (($value['status']==1) ? date('d/m/Y H:i',strtotime($value['date_update'])): "Chưa sử dụng"); ?></td>
-            <td><?php echo (($value['status']==1) ? $value['username']." | ".$value['firstname'] : "Chưa sử dụng") ?></td>
+            
           </tr>
          <?php
           }

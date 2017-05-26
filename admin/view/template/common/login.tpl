@@ -4,8 +4,8 @@
          
          <div class="panel panel-color panel-primary" style="background:#fff !important; border:1px solid #cecece;">
             <div class="heade-login text-center">
-              <a href="http://HUNGTHINHPHATCORP.COM">
-                  HUNGTHINHPHATCORP.COM
+              <a href="">
+                  Tân An Việt
                </a>
             </div>
 
