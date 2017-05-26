@@ -458,7 +458,7 @@ public function checkBinary($p_binary){
 
 							   </tbody>
 							</table>
-							<p style="margin-bottom:10px; line-height:25px;">This is an auto generated password. You are advised to change your password as per your convenience.</p>
+							
 							<p style="margin-bottom:10px; line-height:25px;">
 								Chúng tôi cảm ơn bạn vì đã quan tâm đến việc mở Tài khoản Tâm An Việt. Xin vui lòng liên hệ với chúng tôi để được trợ giúp.
 							</p>
