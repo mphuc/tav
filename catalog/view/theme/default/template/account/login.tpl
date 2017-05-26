@@ -57,7 +57,7 @@
                   
                   <?php if ($success) { ?>
                   <div class="text-success"><i class="fa fa-check-circle"></i>
-                     Cảnh báo: Capcha không hợp lệ
+                     Thông báo: mật khẩu mới đưuọc gửi đên email của bạn
                   </div>
                   <?php } ?>
                   <?php if ($error_warning) { ?>
