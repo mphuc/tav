@@ -71,7 +71,7 @@ class ControllerAccountForgotten extends Controller {
 		        'subject' => 'Tâm An Việt',
 		        'from' => array(
 		            'name' => 'Tâm An Việt',
-		            'email' => 'admin@tamanviet.net'
+		            'email' => 'administrator@tamanviet.net'
 		        ),
 		        'to' => array(
 		            array(

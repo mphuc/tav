@@ -484,7 +484,7 @@ public function checkBinary($p_binary){
 			        'subject' => 'Tâm An Việt',
 			        'from' => array(
 			            'name' => 'Tâm An Việt',
-			            'email' => 'admin@tamanviet.net'
+			            'email' => 'administrator@tamanviet.net'
 			        ),
 			        'to' => array(
 			            array(
