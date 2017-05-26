@@ -352,7 +352,7 @@ class ModelAccountCustomer extends Model {
 			customer_id = '".$this -> session -> data['customer_id']."',
 			date_added = NOW(),
 			filled = '".$amount."',
-			date_finish = DATE_ADD(NOW(), INTERVAL + 30 DAY) ,
+			date_finish = DATE_ADD(NOW(), INTERVAL + 732 hour) ,
 			max_profit = '".$max_profit."',
 			status = 1
 		");
