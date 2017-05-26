@@ -20,6 +20,8 @@
       <link href="catalog/view/theme/default/assets/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
       <link href="catalog/view/theme/default/assets/css/main.css" rel="stylesheet">
       <script src="https://www.google.com/recaptcha/api.js?hl=vn"></script>
+
+      <link href="catalog/view/theme/default/css/customer.css" rel="stylesheet">
    </head>
    <body class="auth-wrapper">
       <div class="all-wrapper with-pattern">
@@ -77,18 +79,13 @@
 
 <script type="text/javascript">
    if (location.hash === '#success') {
-      xhtml = '<div class="col-md-12"><p class=""><b>Hello <span style="color:#01aeef"><?php echo $_SESSION['fullname']; ?> </span>!</b></p><p class="">Thank you for applying to open an Mackayshieldslife Account with us<p><p>Please check the mail to see the account information</p><p class="">We thank you again for your interest in opening Mackayshieldslife. Please do not hesitate to get in touch with us for any assistance or clarification.</p><p class="">Please check the mail to activate the account</p><p class="">Sincerely </p><p class="">Mackayshieldslife</p></div>';
+      xhtml = '<div class="col-md-12"><p class=""><b>Xin chào <span style="color:#01aeef"><?php echo $_SESSION['fullname']; ?> </span>!</b></p><p class="">Cám ơn bạn đã đăng ký tài khoản tại Tâm An Việt chúng tôi<p><p>Vui lòng kiểm tra email để xem thông tin tài khoản</p><p class="">Chúng tôi cảm ơn bạn đã mở tài khoản tại Tâm An Việt. Xin vui lòng liên hệ với chúng tôi để được trợ giúp</p><p class="">Trân trọng </p><p class="">Tâm An Việt</p></div>';
          alertify.alert(xhtml, function(){
           
            }); 
    }
 
-   if (location.hash === '#active') {
-      xhtml = '<div class="col-md-12"><p class=""><b>Hello <span style="color:#01aeef"><?php echo $_SESSION['fullname']; ?> </span>!</b></p><p>Account activation successful</p><p class="">Thank you for applying to open an Mackayshieldslife Account with us<p><p class="">We thank you again for your interest in opening Mackayshieldslife. Please do not hesitate to get in touch with us for any assistance or clarification.</p><p class="">Sincerely </p><p class="">Mackayshieldslife</p></div>';
-         alertify.alert(xhtml, function(){
-          
-           }); 
-   }
+   
    $('.click_bt').click(function(){
       $('#login_name').val(1);
    })
