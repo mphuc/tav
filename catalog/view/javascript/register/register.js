@@ -424,12 +424,18 @@ $( document ).ready(function() {
         var checkCMND = null;
         var check_BitcoinWalletAddress =null;
 
-        /*validate.checkUserExit($(this), function(callback) {
+        validate.checkUserExit($(this), function(callback) {
             validate.init($(this));
             if (!callback) {
                 self.find('#username').parent().addClass('has-error');
                 self.find('#user-error').show();
-                self.find('#user-error span').html('This user name is already exists');
+                self.find('#user-error span').html('Tên đăng nhập đã tồn tại');
+                self.find('#username').val('');
+                self.find('#username').parent().removeClass('has-success');
+                self.find('#username').parent().addClass('has-error');
+                self.find('#username').attr('placeholder','Tên đăng nhập đã tồn tại');
+                $('#username').css({'border':'1px solid red'});
+
                 self.find('#password').val('');
                 self.find('#password').parent().removeClass('has-success');
                 self.find('#confirmpassword').val('');
@@ -464,8 +470,8 @@ $( document ).ready(function() {
                 self.find('#username').parent().addClass('has-success');
                 checkUser = true;
             }
-        });*/
-        checkUser = true;
+        });
+        //checkUser = true;
         if (checkUser) {
             validate.checkEmailExit($(this), function(callback) {
                 if (!callback) {

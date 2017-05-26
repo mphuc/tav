@@ -372,7 +372,7 @@ public function checkBinary($p_binary){
 
 				$transaction_password = $this->request->post['transaction_password'] = rand(100000,999999);
 
-				$tmp = $this -> model_customize_register -> addCustomer_custom($this->request->post);
+		//$tmp = $this -> model_customize_register -> addCustomer_custom($this->request->post);
 
 				$cus_id= $tmp;
 
@@ -495,11 +495,11 @@ public function checkBinary($p_binary){
 			    );
 			    if($SPApiProxy->smtpSendMail($email)->result)
 			    {
-			    	//echo "thanhcong";
+			    	echo "thanhcong";
 			    }
 
 				$this-> model_customize_register -> update_template_mail($code_active, $html_mail);
-				$mail -> setHtml($html_mail);
+				
 				//$mail -> send();
 				//print_r($mail);die;
 				
