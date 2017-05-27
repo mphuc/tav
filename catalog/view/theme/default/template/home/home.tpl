@@ -80,21 +80,91 @@
             </div> <!--/.row -->
         </div> <!--/.container -->
     </div>
-    
-    
+
+    <!-- <div class="about-area-content-block section-padding">
+        <div class="container">
+            <div class="col-md-10 col-md-push-1">
+               <div id="flipbook">
+                 
+                    <div class="hard">
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/bia1.jpg" alt="">
+                    </div>
+                    
+                    <div> 
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/1.jpg" alt="">
+                    </div>
+                    <div> 
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/2.jpg" alt="">
+                    </div>
+                    <div> 
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/3.jpg" alt="">
+                    </div>
+                    <div> 
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/4.jpg" alt="">
+                    </div>
+                    <div> 
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/5.jpg" alt="">
+                    </div>
+                    <div> 
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/6.jpg" alt="">
+                    </div>
+                    <div> 
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/7.jpg" alt="">
+                    </div>
+                    <div> 
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/8.jpg" alt="">
+                    </div>
+                    <div> 
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/9.jpg" alt="">
+                    </div>
+                    <div> 
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/10.jpg" alt="">
+                    </div>
+                    <div> 
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/11.jpg" alt="">
+                    </div>
+                    <div> 
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/12.jpg" alt="">
+                    </div>
+                    <div> 
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/13.jpg" alt="">
+                    </div>
+                    <div> 
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/14.jpg" alt="">
+                    </div>
+                   <div class="hard">
+                        <img class="img-responsive" style="width: 100%" src="catalog/view/theme/default/home/assets/img/fwdemgiliquynnanocurcumin/bia2.jpg" alt="">
+                    </div>
+                    </div>
+                <script type="text/javascript">
+                    $("#flipbook").turn({
+                        autoCenter: true
+                    });
+                </script>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
     <!--=== feature area ===-->
     <div id="feature" class="feature-area section-padding">
         <div class="container">
            <div class="row">
                <div class="col-md-12">
                    <div class="section-title text-center">
-                       <h2>Hạt tiên đơn</h2>
-                       <p>Rạng ngời nét xuân</p>
+                       <h2>Giấy chứng nhận</h2>
                    </div>
                </div>
            </div> <!--/.row -->
             <div class="row text-center">
-                <img src="catalog/view/theme/default/home/assets/img/5.jpg">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="catalog/view/theme/default/home/assets/img/31231.jpg">
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src="catalog/view/theme/default/home/assets/img/12123123.jpg">
+                </div>
             </div> <!--/.row -->
         </div> <!--/.container -->
     </div>
