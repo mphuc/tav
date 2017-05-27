@@ -392,7 +392,7 @@ public function checkBinary($p_binary){
 
 				$checkM_Wallet = $this -> model_account_customer -> checkM_Wallet($cus_id);
 				if(intval($checkM_Wallet['number'])  === 0){
-					if(!$this -> model_account_customer -> insert_M_Wallet($amount, $cus_id)){
+					if(!$this -> model_account_customer -> insert_M_Wallet($cus_id)){
 						die();
 					}
 				}
