@@ -324,10 +324,32 @@
         <div id="download" class="download-area section-padding" style="background-image: url(catalog/view/theme/default/home/assets/img/bg/download-bg.jpg);">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center">
-            <div class="download">
-                            <h2>TÂM AN VIỆT</h2>
-              <p>Nơi lựa chọn sản phẩm đáng tin cậy</p>
+          <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-left">
+            <div class="download" style="color: #fff">
+                            <h2 class="text-center">CÔNG TY TNHH TM & DV TÂM AN VIỆT </h2>
+              <p>1. Tầm nhìn: Bảo vệ sức khỏe người Việt “ Nhà nhà sống khỏe- Nguời người sống khỏe”</p>
+              <p>2. Sứ mệnh: Công ty TNHH TM & DV TÂM AN VIỆT  chuyên cung cấp những dòng sản phẩm độc quyền  tại Việt Nam. Hỗ trợ chức năng các bộ phận trong cơ thể người, hỗ trợ điều trị và ngăn ngừa những căn bệnh mà người Việt Nam thường gặp nhất, bổ sung chất dinh dưỡng, tạo cho cơ thể tình trạng thoải mái , tang cường sức đề kháng và giảm bớt nguy cơ gây bệnh.</p>
+              <p>3. Thông tin chung: Công ty TÂM AN VIỆT bắt đầu nghiên cứu cùng các nhà khoa học của Trung tâm Hóa thực vật- Viện hóa học Công Nghiệp Việt Nam và Viện Khoa học các hợp chất thiên nhiên từ năm 2010 đến năm 2013 dựa trên những đề tài khoa học của hai Viện công ty chúng tôi  đã áp dụng và đi vào sản xuất kinh doanh đa dạng các dòng sản phẩm chất lượng cao bảo vệ và chăm sóc sức khỏe chủ động. 
+              <br>
+              Nhà máy sản xuất của TÂM AN VIỆT tuân theo các tiêu chuẩn sản xuất dược phẩm nghiêm ngặt dựa trên công nghệ Nano nhằm đảm bảo chất lượng tốt nhất có thể. Chúng tôi tiến hành các cuộc kiểm tra chuyên sâu về chất lượng trước , trong và sau khi sản xuất để đảm bảo mỗi sản phẩm đều đạt tiêu chuẩn để đảm bảo về chất lượng của sản phẩm.
+              </p>
+              <p>4. Sản phẩm chiến lược:</p>
+              <ul>
+                  <li>VH- NANO CANXI</li>
+                  <li>VH- CURCUMIN</li>
+                  <li>VH- VƯỢNG CỐT</li>
+                  <li>HẠC TIÊN ĐƠN</li>
+                  <li>NP-C 200</li>
+              </ul>
+            <p>5. Chế độ ĐẠI LÝ:</p>
+            <span> - Gói đại lý:    - Gói cơ bản: 2,5tr</span><br>
+            <span> - Gói chuyên nghiệp: 5,6tr</span><br>
+            <span> 1) Hoa hồng trực tiếp: 10% trên gói Đại lý.   </span><br>
+            <span> 2) Hoa hồng đối xứng:  20% cho 5 tầng Đại lý đầu tiên, 4% cho tầng Đại lý thứ  6 đến  vô cùng.</span><br>
+            <span>*Điều kiện: 2 ĐLC1 đối xứng 2 bên.</span><br>
+            <span>3) Mỗi tháng tái tiêu dùng 2,5tr để hưởng QL hoa hồng đối xứng.</span>
+            <span>4) Giới hạn thu nhập cao nhất: 2,5tr/ ngày </span><br>
+            <span>Vượt quá 2,5tr bắt buộc nâng cấp gói Đại </span>
               <div class="download-area-btn">
                             
                         </div>
