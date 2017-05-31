@@ -18,7 +18,7 @@
                     <ul class="nav navbar-nav navbar-right"> <!-- main menu -->
                         <li class="active smooth-scroll"><a href="#home">Trang chủ</a></li>
                         <li class="smooth-scroll"><a href="#feature">Sản phẩm</a></li>            
-                        <li class="smooth-scroll"><a href="#screenshots">Nổi bậc</a></li>             
+                        <li class="smooth-scroll"><a href="#screenshots">Nổi bật</a></li>             
                         <!-- <li class="smooth-scroll"><a href="#pricing">Pricing</a></li> -->                     
                         <li class="smooth-scroll"><a href="#download">Giới thiệu </a></li>                     
                         <!-- <li class="smooth-scroll"><a href="#faq">faq</a></li>    -->        
@@ -31,13 +31,13 @@
     </div>
     
      <!--=== home area ===-->
-    <div id="home" data-stellar-background-ratio="0.4" class="home-area" style="background-image: url(catalog/view/theme/default/home/assets/img/bg/welcome-video-bg.jpg);">
+    <div id="home" data-stellar-background-ratio="0.4" class="home-area" style="background-image: url(catalog/view/theme/default/home/assets/img/bg/tavbg.png);">
           <a class="player"></a>     
            <div class="container">
             <div class="row">
                 <div class="col-md-7 col-sm-12">
                     <div class="welcome-text">
-                        <h1>Thực phẩm chức năng <strong>- Tâm An Việt</strong></h1>
+                        <h1 style="text-transform: uppercase;">Công ty TNHH thương mại và dịch vụ <strong> Tâm An Việt</strong></h1>
                         <p>Cung cấp sản phẩm độc quyền tại Việt Nam. Hỗ trợ chức năng của các bộ phận trong cơ thể người, có tác dụng dinh dưỡng, tạo cho cơ thể tình trạng thoải mái, tăng sức đề kháng và giảm bớt nguy cơ gây bệnh. Tuỳ theo công thức, hàm lượng vi chất.</p>
                         <!-- <div class="welcome-btn">
                             <a href="#" class="app-btn"><i class="fa fa-apple"></i><span>Available on the<span class="text-large">App Store</span></span></a>
@@ -61,14 +61,12 @@
             <div class="row">
                 <div class="col-md-7 col-sm-12">
                     <div class="about-content wow fadeInLeft" data-wow-delay="0.2s">
-                        <h3>VH- <strong>CANXI</strong></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <h3>VH- <strong>NANO CANXI</strong></h3>
+             
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+               <p>Bổ sung các dưỡng chất <span style="color: red">Canxi</span> và <span style="color: red">Vitamin D3</span> cho cơ thể</p>
+<p>Ngăn ngừa bệnh loãn xương. Dùng tốt cho người già, người mang thai và đang cho con bú, trẻ em chậm lớn, còi xương, biếng ăn, chậm mọc răng, vàng da…</p>
+<p>Các trường hợp thiếu dưỡng chất Canxi khác.</p>
                 
                     </div>
                 </div>
@@ -181,16 +179,16 @@
                 </div>
                 <div class="col-md-7 col-sm-12">
                     <div class="choose-list-content wow fadeInRight" data-wow-delay="0.2s">
-                        <h3>NP - <span>C200</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                        <ul class="choose-list">
-                            <li>Intergrated pop-up video</li>
-                            <li>Screenshot slider</li>
-                            <li>QrCode to download app</li>
-                            <li>PSD to html</li>
-                            <li>Team, Pricing table, Review, Google Map, follow, etc sections</li>
-                        </ul>
+                        <h3>NP - <span>C200 NẤM HẦU THỦ</span></h3>
                         
+                        <ul class="choose-list">
+                            <li>Hỗ trợ điều trị và ngăn ngừa ung thư</li>
+                            <li>Bổ sung các dưỡng chất có tác dụng chống lại quá trình oxy hóa, trung hòa các gốc tự do.</li>
+                            <li>Tăng cười chức năng hệ tiêu hóa, gan, mật. Tăng cười hệ miễn dịch.</li>
+                            <li>Giảm độc tính và tác dụng phụ của Hóa trị và Xạ trị.</li>
+                
+                        </ul>
+                
                     </div>
                 </div>
             </div> <!--/.row -->
@@ -321,40 +319,42 @@
         
     
         <!--=== download area ===-->
-        <div id="download" class="download-area section-padding" style="background-image: url(catalog/view/theme/default/home/assets/img/bg/download-bg.jpg);">
+        <div id="download" class="download-area section-padding" >
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-left">
-            <div class="download" style="color: #fff">
-                            <h2 class="text-center">CÔNG TY TNHH TM & DV TÂM AN VIỆT </h2>
+        <div class="col-md-12">
+            <h2 class="text-center">CÔNG TY TNHH TM & DV TÂM AN VIỆT </h2>
+        </div>
+        <div class="col-md-7">
+             <div class="download" style="color: #fff">
+                            
               <p>1. Tầm nhìn: Bảo vệ sức khỏe người Việt “ Nhà nhà sống khỏe- Nguời người sống khỏe”</p>
               <p>2. Sứ mệnh: Công ty TNHH TM & DV TÂM AN VIỆT  chuyên cung cấp những dòng sản phẩm độc quyền  tại Việt Nam. Hỗ trợ chức năng các bộ phận trong cơ thể người, hỗ trợ điều trị và ngăn ngừa những căn bệnh mà người Việt Nam thường gặp nhất, bổ sung chất dinh dưỡng, tạo cho cơ thể tình trạng thoải mái , tang cường sức đề kháng và giảm bớt nguy cơ gây bệnh.</p>
               <p>3. Thông tin chung: Công ty TÂM AN VIỆT bắt đầu nghiên cứu cùng các nhà khoa học của Trung tâm Hóa thực vật- Viện hóa học Công Nghiệp Việt Nam và Viện Khoa học các hợp chất thiên nhiên từ năm 2010 đến năm 2013 dựa trên những đề tài khoa học của hai Viện công ty chúng tôi  đã áp dụng và đi vào sản xuất kinh doanh đa dạng các dòng sản phẩm chất lượng cao bảo vệ và chăm sóc sức khỏe chủ động. 
               <br>
               Nhà máy sản xuất của TÂM AN VIỆT tuân theo các tiêu chuẩn sản xuất dược phẩm nghiêm ngặt dựa trên công nghệ Nano nhằm đảm bảo chất lượng tốt nhất có thể. Chúng tôi tiến hành các cuộc kiểm tra chuyên sâu về chất lượng trước , trong và sau khi sản xuất để đảm bảo mỗi sản phẩm đều đạt tiêu chuẩn để đảm bảo về chất lượng của sản phẩm.
               </p>
-              <p>4. Sản phẩm chiến lược:</p>
+              <p style=" margin-bottom: 5px; ">4. Sản phẩm:</p>
               <ul>
                   <li>VH- NANO CANXI</li>
+                  <li>NP-C 200</li>
                   <li>VH- CURCUMIN</li>
                   <li>VH- VƯỢNG CỐT</li>
                   <li>HẠC TIÊN ĐƠN</li>
-                  <li>NP-C 200</li>
+                  
               </ul>
-            <p>5. Chế độ ĐẠI LÝ:</p>
-            <span> - Gói đại lý:    - Gói cơ bản: 2,5tr</span><br>
-            <span> - Gói chuyên nghiệp: 5,6tr</span><br>
-            <span> 1) Hoa hồng trực tiếp: 10% trên gói Đại lý.   </span><br>
-            <span> 2) Hoa hồng đối xứng:  20% cho 5 tầng Đại lý đầu tiên, 4% cho tầng Đại lý thứ  6 đến  vô cùng.</span><br>
-            <span>*Điều kiện: 2 ĐLC1 đối xứng 2 bên.</span><br>
-            <span>3) Mỗi tháng tái tiêu dùng 2,5tr để hưởng QL hoa hồng đối xứng.</span>
-            <span>4) Giới hạn thu nhập cao nhất: 2,5tr/ ngày </span><br>
-            <span>Vượt quá 2,5tr bắt buộc nâng cấp gói Đại </span>
+         
               <div class="download-area-btn">
                             
                         </div>
             </div>
-          </div>        
+        </div>
+        <div class="col-md-5" >
+            <img src="catalog/view/theme/default/home/assets/img/bg/download-bg.jpg" alt="">
+        </div>
+        
+          <!-- <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-left"> -->
+             
         </div> <!--/.row -->
       </div> <!--/.container -->  
     </div>
@@ -369,5 +369,103 @@
     
     
     <!--=== contact area ===-->
-    
+    <div id="contact" class="contact-area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center">
+                            <h2>Liên hệ</h2>
+                           <!--  <p>If you have any question, get in touch here.</p> -->
+                        </div>
+                    </div>
+                </div> <!--/.row -->
+                
+                <div class="row">
+                  <div class="col-md-5">
+                       <div class="address wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                            <div class="single-address">
+                                <i class="fa fa-rocket"></i>
+                                <h4>Địa chỉ</h4>
+                                <p>Số 26, ngõ 36, Duy Tân, Quận Cầu Giấy, TP Hà Nội</p>
+                            </div>
+                            <div class="single-address">
+                                <i class="fa fa-phone"></i>
+                                <h4>Điện thoại</h4>
+                                <p>096 5911 311 <br>04 6689 0505 </p>
+                            </div>
+                             <div class="single-address">
+                                <i class="fa fa-envelope"></i>
+                                <h4>Email</h4>
+                                <p>hgpn2017@gmail.com.<br></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-7">
+                        <div class="contact">
+                             <form id="contactForm" method="POST" class="contact-form" data-toggle="validator" novalidate="true">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="controls">
+                                              <input type="text" id="name" name="fname" class="form-control" placeholder="Họ tên" required="" data-error="Vui lòng nhập họ tên">
+                                              <div class="help-block with-errors"></div>
+                                            </div>
+                                          </div>
+                                     </div>
+                                     <div class="col-md-6">
+                                         <div class="form-group">
+                                            <div class="controls">
+                                              <input type="email" class="email form-control" id="email" placeholder="Email" name="email" required="" data-error="Vui lòng nhập họ email">
+                                              <div class="help-block with-errors"></div>
+                                            </div>
+                                          </div>
+                                     </div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="col-md-12">
+                                         <div class="form-group">
+                                            <div class="controls">
+                                                  <input type="text" id="msg_subject" class="form-control" placeholder="Tiêu đề" name="subject" required="" data-error="Please enter your message subject">
+                                                  <div class="help-block with-errors"></div>
+                                            </div>
+                                          </div>
+                                     </div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="col-md-12">
+                                         <div class="form-group">
+                                            <div class="controls">
+                                              <textarea id="message" name="msg" rows="7" placeholder="Nội dung" class="form-control" required="" data-error="Write your message"></textarea>
+                                              <div class="help-block with-errors"></div>
+                                            </div>  
+                                          </div>
+                                     </div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="col-md-12">
+                                          <div class="form-group">
+                              <div  class="g-recaptcha" data-sitekey="6Lcm_iIUAAAAAJGRhY09TEmAX01wTF3_8mkZRJQF"></div>
+
+                           </div>
+                                     </div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="col-md-12">
+                                         <button type="submit" id="submit" class="btn btn-effect btn-contact-bg disabled">Gửi</button>
+                                     </div>
+                                 </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                                  <div class="clearfix"></div>   
+                                    </div>
+                                </div>
+                            </form>     
+                        </div>
+                    </div>  
+                </div> <!--/.row -->
+            </div> <!--/.container -->
+        </div>
+         <script src="https://www.google.com/recaptcha/api.js?hl=vn"></script>
 <?php echo $self->load->controller('home/page/footer'); ?>    

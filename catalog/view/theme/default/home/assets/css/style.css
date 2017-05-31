@@ -43,11 +43,11 @@ NOTE: This is main stylesheet of the template.
 * 00. BASE CSS
 * ----------------------------------------------------------------------------------------
 */
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
-@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
+/*@import url('https://fonts.googleapis.com/css?family=Satisfy');*/
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 1.6;
 }
@@ -164,7 +164,7 @@ p{
     margin-bottom: 10px;
 }
 .section-title p{
-    font-family: 'Satisfy', cursive;
+    font-family: 'Open Sans', sans-serif;
     font-size: 22px;
 }
 
@@ -174,13 +174,16 @@ p{
 * 03. HEADER AREA
 * ----------------------------------------------------------------------------------------
 */
+#contact{
+  padding-top: 10px;
+}
 .custom-navbar .logo a{
    max-width: 160px;
    
 }
 
 .custom-navbar ul li a {
-    color: #fff;
+    color: #192f03;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -198,6 +201,8 @@ p{
     background-color: transparent;
     border: 0 none;
     transition: all 0.4s ease-in-out;
+    background-image: -webkit-linear-gradient(143deg,#ffffff 1%,#eff9da 27%,#adc876 67%,#6d9832 94%), -webkit-linear-gradient(#4d7c15,#92b748);
+    background-image: linear-gradient(143deg,#ffffff 1%,#eff9da 27%,#adc876 67%,#6d9832 94%), linear-gradient(#4d7c15,#92b748);
 }
 .custom-navbar.menu-top-fixed .logo a h1{
     color: #333;
@@ -725,7 +730,7 @@ transform: translate(0px, 5px);
     width: 100%;
     height: 100%;
     content: "";
-    background: rgba(0, 0, 0, 0.75);
+    /*background: rgba(0, 0, 0, 0.75);*/
     z-index: -1;
 }
 .download h2 {
@@ -736,10 +741,14 @@ transform: translate(0px, 5px);
     
 }
 .download p {
+  text-align: justify;
     font-size: 14px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    color: #fff;
+  /*  margin-bottom: 30px;
+    margin-top: 30px;*/
+    color: #000;
+}
+.download ul li{
+  color: #000;
 }
 .download-area-btn{
     margin-top: 60px;

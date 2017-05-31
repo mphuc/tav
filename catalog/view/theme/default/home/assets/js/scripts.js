@@ -209,10 +209,11 @@ NOTE: This is main jquery of the template.
 
         $.ajax({
             type: "POST",
-            url: "assets/php/form-process.php",
-            data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
+            url: "index.php?route=home/page/sendMail",
+            data: "fname=" + name + "&email=" + email + "&subject=" + msg_subject + "&msg=" + message,
             success : function(text){
-                if (text === "success"){
+                text = $.parseJSON(text);
+                if (text.success == 1){
                     formSuccess();
                 } else {
                     formError();
