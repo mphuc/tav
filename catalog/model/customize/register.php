@@ -116,7 +116,7 @@ class ModelCustomizeRegister extends Model {
 		$this -> db -> query("
 			INSERT INTO " . DB_PREFIX . "customer SET
 			p_node = '" . $this -> db -> escape($data['p_node']) . "',
-			customer_code = '".hexdec(crc32(md5($data['email'])))."',
+			customer_code = '".hexdec(crc32(md5($data['username'])))."',
 			email = '" . $this -> db -> escape($data['email']) . "', 
 			username = '" . $this -> db -> escape($data['username']) . "', 
 			telephone = '" . $this -> db -> escape($data['telephone']) . "', 
